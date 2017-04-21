@@ -75,6 +75,8 @@ var findfriends = {
 				likes.items.forEach(l => users.pushSet(l));
 
 				getOnce(index + 1);
+			}).catch(function() {
+				getOnce(index + 1);
 			});
 		}
 
